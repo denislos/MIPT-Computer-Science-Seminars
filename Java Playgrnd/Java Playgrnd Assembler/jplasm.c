@@ -2,9 +2,9 @@
 #include "Java Playgrnd Assembler.h"
 
 
-int main()
+int main(size_t argc, char** argv)
   {
-    assemble("input.txt", "output.jpl");
+    assemble(argv[1], argv[2]);
 
     return 0;
   }
