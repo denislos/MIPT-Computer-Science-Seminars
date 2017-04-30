@@ -1,0 +1,11 @@
+
+DEFINE_ERROR(INAPPROPRIATE_INPUT_FILE_NAME_ERROR, 0x10, "Inappropriate name of input file")
+DEFINE_ERROR(MEMORY_ALLOCATION_ERROR, 0x11, "Cannot allocate memory")
+DEFINE_ERROR(CANNOT_READ_INPUT_FILE_ERROR, 0x12, "Cannot read from input file")
+DEFINE_ERROR(BAD_JPL_ERROR, 0x13, "Bad jpl file")
+DEFINE_ERROR(CANNOT_OPEN_INPUT_FILE_ERROR, 0x14, "Cannot open input file")
+DEFINE_ERROR(NO_INITILIZATION_ERROR, 0x15, "Virtual machine has not been initiliazed")
+DEFINE_ERROR(UNKNOWN_COMMAND_ERROR, 0x16, "Unknown command")
+DEFINE_ERROR(PROGRAM_TERMINATION_ERROR, 0x17, "Program has been terminated")
+DEFINE_ERROR(UNKNOWN_REGISTER_ERROR, 0x18, "Unknown register")
+DEFINE_ERROR(WRONG_INPUT_ERROR, 0x19, "Wrong input")
