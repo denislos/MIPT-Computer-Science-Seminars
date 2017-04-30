@@ -4,7 +4,6 @@
 #define JPLASM_LIST_H
 
 #include "JplasmLabel.h"
-#include "JplasmList.h"
 #include <stdlib.h>
 #include "MyList.h"
 

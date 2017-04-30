@@ -70,7 +70,7 @@ DEFINE_COMMAND /* 0x19 - 0x1f */
       {
         input_pos += input_length;
 
-        if ( !(register_code = findRegister(input_string) ) )
+        if ( register_code = findRegister(input_string)  )
           *(unsigned char*)(output_buffer + output_pos - 1) = register_code + 8;
         else 
           onError(UNKNOWN_REGISTER);
