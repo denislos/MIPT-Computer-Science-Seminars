@@ -4,7 +4,7 @@ DEFINE_COMMAND
   PUSHN, 
   0x10,
   {
-    if ( 1 == sscanf(input_buffer + input_pos, "%x%n", &input_number, &input_length) )
+    if ( 1 == sscanf(input_buffer + input_pos, "%lx%n", &input_number, &input_length) )
       {
         input_pos += input_length;
 
@@ -126,7 +126,7 @@ DEFINE_COMMAND /* 0x2a - 0x2f */
   MOVN,
   0x2a,
   {
-    if ( 2 == sscanf(input_buffer + input_pos, "%s %x%n", input_string, &input_number, &input_length) )
+    if ( 2 == sscanf(input_buffer + input_pos, "%s %lx%n", input_string, &input_number, &input_length) )
       {
         input_pos += input_length;
 
