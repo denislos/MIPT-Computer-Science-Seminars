@@ -360,6 +360,45 @@ DEFINE_COMMAND
     getDataCommand(DQ, int64_t)
   }
 )
+  
+DEFINE_COMMAND /* 0x70 - 0x75  */
+(
+  INC,
+  0x70,
+  {
+    if ( 1 == sscanf(input_buffer + input_pos, "%s%n", input_string, &input_length) )
+      {
+        input_pos += input_length;
+
+        if ( !(register_code = findRegister(input_string)) )
+          onError(UNKNOWN_REGISTER);
+        else 
+          *(unsigned char*)(output_buffer + output_pos - 1 ) = register_code + 0x5f;
+      }
+    else 
+      onError(PUSHR_ERROR);
+  }
+)
+
+
+DEFINE_COMMAND /* 0x76 - 0x7b */
+(
+  DEC,
+  0x76,
+    {
+    if ( 1 == sscanf(input_buffer + input_pos, "%s%n", input_string, &input_length) )
+      {
+        input_pos += input_length;
+
+        if ( !(register_code = findRegister(input_string)) )
+          onError(UNKNOWN_REGISTER);
+        else 
+          *(unsigned char*)(output_buffer + output_pos - 1 ) = register_code + 0x65;
+      }
+    else 
+      onError(PUSHR_ERROR);
+  }
+)  
 
 
 
