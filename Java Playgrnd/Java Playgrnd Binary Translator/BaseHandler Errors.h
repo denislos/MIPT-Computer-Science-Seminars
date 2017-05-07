@@ -1,0 +1,4 @@
+
+DEFINE_ERROR(INAPPROPRIATE_INPUT_FILE_NAME_ERROR, 0x10, "Inappropriate name of input file")
+DEFINE_ERROR(MEMORY_ALLOCATION_ERROR, 0x11, "Memory allocation error")
+DEFINE_ERROR(CANNOT_OPEN_INPUT_FILE_ERROR, 0x12, "Cannot open input file")
