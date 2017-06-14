@@ -859,3 +859,116 @@ DEFINE_COMMAND
     getOffsetCommand(<=)
   }
 )
+  
+DEFINE_COMMAND
+(
+  INC,
+  0x70,
+  {
+    RAX++;
+  }
+)
+
+DEFINE_COMMAND
+(
+  INC,
+  0x71,
+  {
+    RBX++;
+  }
+)
+
+DEFINE_COMMAND
+(
+  INC,
+  0x72,
+  {
+    RCX++;
+  }
+)
+
+DEFINE_COMMAND
+(
+  INC,
+  0x73,
+  {
+    RDX++;
+  }
+)
+
+DEFINE_COMMAND
+(
+  INC,
+  0x74,
+  {
+    RBP++;
+  }
+)
+
+DEFINE_COMMAND
+(
+  INC,
+  0x75,
+  {
+    RSP++;
+  }
+)
+
+DEFINE_COMMAND
+(
+  DEC,
+  0x76,
+  {
+    RAX--;
+  }
+)
+
+
+DEFINE_COMMAND
+(
+  DEC,
+  0x77,
+  {
+    RBX--;
+  }
+)
+
+
+DEFINE_COMMAND
+(
+  DEC,
+  0x78,
+  {
+    RCX--;
+  }
+)
+
+
+DEFINE_COMMAND
+(
+  DEC,
+  0x79,
+  {
+    RDX--;
+  }
+)
+
+
+DEFINE_COMMAND
+(
+  DEC,
+  0x7A,
+  {
+    RBP--;
+  }
+)
+
+
+DEFINE_COMMAND
+(
+  DEC,
+  0x7B,
+  {
+    RSP--;
+  }
+)  
